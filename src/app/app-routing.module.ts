@@ -5,11 +5,10 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
-    path:'', component: NavComponent
+    path:'', component: NavComponent, children: [
+       { path: 'home', component: HomeComponent}
+    ]
   },
-  {
-    path:'/Home', component: HomeComponent
-  }
 ];
 
 @NgModule({
